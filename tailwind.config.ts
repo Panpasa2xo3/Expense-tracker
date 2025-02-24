@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // กำหนดสีตามโหมดต่าง ๆ ได้ตรงนี้
+        lightBackground: '#f3f4f6', // ตัวอย่างสีพื้นหลังโหมดสว่าง
+        darkBackground: '#1f2937', // ตัวอย่างสีพื้นหลังโหมดมืด
+        lightText: '#000000', // ตัวอย่างสีตัวอักษรโหมดสว่าง
+        darkText: '#ffffff', // ตัวอย่างสีตัวอักษรโหมดมืด
       },
     },
   },
