@@ -1,19 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Poppins, Dancing_Script } from 'next/font/google';
 
-const poppins = Poppins({
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
-});
-
-const dancingScript = Dancing_Script({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-dancing-script',
-});
 
 interface Transaction {
   description: string;
