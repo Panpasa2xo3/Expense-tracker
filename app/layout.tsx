@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Poppins, Dancing_Script } from 'next/font/google';
 import React from "react";
-
-const poppins = Poppins({
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
-});
-
-const dancingScript = Dancing_Script({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-dancing-script',
-});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
