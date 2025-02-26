@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-
 interface Transaction {
   description: string;
   amount: number;
@@ -46,7 +45,10 @@ const ExpenseTracker = () => {
         {theme === 'light' ? '🌙 Dark Mode' : '🌞 Light Mode'}
       </button>
       
-      <h2 className={`text-3xl font-bold text-center ${theme === 'dark' ? 'text-white' : 'text-[#5e2870]'} mb-6 ${dancingScript.variable}`}>Expense Tracker</h2>
+      {/* ใช้ฟอนต์ที่กำหนดใน RootLayout.tsx */}
+      <h2 className={`text-3xl font-bold text-center ${theme === 'dark' ? 'text-white' : 'text-[#5e2870]'} mb-6`}>
+        Expense Tracker
+      </h2>
       <p className={`text-lg font-semibold text-center ${theme === 'dark' ? 'text-white' : 'text-[#5e2870]'}`}>Balance: ฿{totalBalance.toFixed(2)}</p>
       
       <div className="my-5">
